@@ -1,0 +1,11 @@
+.images-container {
+    float: left;
+}
+
+.search-container {
+    float: right;
+}
+
+.buttons button {
+    margin: 2px;
+}
