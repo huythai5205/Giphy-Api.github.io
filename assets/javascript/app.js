@@ -1,4 +1,5 @@
-$('#submit').click(function () {
+$('#submit').click(function (event) {
+    event.preventDefault();
     var giphyKey = 'aoUmAo4L31phSx8JnDzDAIeq3oXjwa9u';
     var queryURL = "https://api.giphy.com/v1/gifs/trending?api_key=" + giphyKey;
     $.ajax({
@@ -6,7 +7,6 @@ $('#submit').click(function () {
         method: 'GET'
     }).done(function (response) {
         console.log(response);
-
     });
 });
 
