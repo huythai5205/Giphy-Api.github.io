@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    let aButtons = ["cat", "dog"];
+    let aButtons = ["cat", "dog", "star wars", "dc", "marvel"];
 
     function renderButtons() {
         $('.buttons').empty();
