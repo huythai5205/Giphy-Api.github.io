@@ -9,3 +9,8 @@
 .buttons button {
     margin: 2px;
 }
+
+.topic-image {
+    width: 200px;
+    height: 200px;
+}
