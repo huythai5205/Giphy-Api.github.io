@@ -19,7 +19,7 @@ $(document).ready(function () {
 
     function ajaxCall(topic) {
         let giphyKey = 'aoUmAo4L31phSx8JnDzDAIeq3oXjwa9u';
-        let queryURL = "http://api.giphy.com/v1/gifs/search?q=" + topic + "&api_key=" + giphyKey + "&limit=10";
+        let queryURL = "https://api.giphy.com/v1/gifs/search?q=" + topic + "&api_key=" + giphyKey + "&limit=10";
         $.ajax({
             url: queryURL,
             method: 'GET'
@@ -40,8 +40,6 @@ $(document).ready(function () {
     });
 
     $(document).on('click', '.topic-button', function () {
-        //"http://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=YOUR_API_KEY&limit=5"
-        //"http://api.giphy.com/v1/gifs/search?q="+value+"&api_key="+giphyKey+"&limit=5"
         let topic = $(this).text();
         ajaxCall(topic);
     });
